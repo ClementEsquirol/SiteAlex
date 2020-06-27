@@ -46,8 +46,8 @@
                     	<a class="nav-link" href="#">Formulaires</a>
                   	</li>
                 </ul>
-                <button class="btn btn-secondary">Inscription</button> &nbsp;
-                <button class="btn btn-info">Connexion</button>
+               <a href="{{ path('inscription') }}" <button class="btn btn-secondary">Inscription</button></a> &nbsp;
+               <a href="{{ path('connexion') }}" <button class="btn btn-info">Connexion</button></a>
       		</div>
     	</nav>
         {% block body %}{% endblock %}

@@ -12,5 +12,19 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class AccountController extends AccueilController
 {
-            
+    /**
+     * @Route("/connexion",name="connexion")
+     */
+    public function connexion()
+    {
+        return $this->render('Account/connexion.html.twig');
+    }
+    
+    /**
+     * @Route("/inscription",name="inscription")
+     */
+    public function inscription()
+    {
+        return $this->render('Account/inscription.html.twig');
+    }
 }
